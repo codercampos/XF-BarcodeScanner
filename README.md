@@ -1,7 +1,10 @@
 # Barcode Scanner for Xamarin Forms
-![](XF-BarcodeScanner/code128_barcode.gif width=100)
-![](XF-BarcodeScanner/ean13_barcode.gif width=100)
-![](XF-BarcodeScanner/qr_barcode.gif width=100)
+![](XF-BarcodeScanner/code128_barcode.gif =100x)
+
+![](XF-BarcodeScanner/ean13_barcode.gif =100x)
+
+![](XF-BarcodeScanner/qr_barcode.gif =100x)
+
 ## Español
 Este proyecto es el ejemplo usado en mi publicación en Xamarin Latino acerca de como implementar un escaner de código de barras en una aplicación Xamarin Forms. 
 
