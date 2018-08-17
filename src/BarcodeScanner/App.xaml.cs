@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BarcodeScanner.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BarcodeScanner
@@ -11,7 +12,7 @@ namespace BarcodeScanner
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage()) { BarTextColor = Color.White, BarBackgroundColor = Color.CadetBlue };
         }
 
         protected override void OnStart()
