@@ -46,7 +46,7 @@ namespace BarcodeScanner.ViewModels
                 BarcodeFormat.CODE_128,
                 BarcodeFormat.EAN_13
             };
-            var page = new ZXingScannerPage(options);
+            var page = new ZXingScannerPage(options) { Title = "Scanner" };
             var closeItem = new ToolbarItem { Text = "Close" };
             closeItem.Clicked += (object sender, EventArgs e) =>
             {
@@ -73,7 +73,7 @@ namespace BarcodeScanner.ViewModels
                     }
                 });
             };
-            Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(page), true);
+            Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(page) { BarTextColor = Color.White, BarBackgroundColor = Color.CadetBlue }, true);
         }
     }
 }
